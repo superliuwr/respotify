@@ -12,7 +12,7 @@ class App extends React.Component {
       albums: [],
       tracks: [],
     });
-    this.currentPreview = null,
+    this.currentPreview = null;
     this.getAlbums = this.getAlbums.bind(this);
     this.processAlbums = this.processAlbums.bind(this);
     this.getTracks = this.getTracks.bind(this);
@@ -48,7 +48,7 @@ class App extends React.Component {
     }
 
     const newAudioObject = new Audio(previewUrl);
-    this.currentPreview = newAudioObject,
+    this.currentPreview = newAudioObject;
 
     newAudioObject.play();
   }
