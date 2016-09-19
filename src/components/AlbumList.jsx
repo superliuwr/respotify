@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AlbumList = (pros) => {
+const AlbumList = (props) => {
   const albums = props.albums.map((album) => <li>{album.name}</li>);
 
-  return(<ul>${albums}</ul>);
+  return (<ul>{albums}</ul>);
 };
 
 AlbumList.propTypes = {
