@@ -7,6 +7,7 @@ const Album = (props) => {
         src={props.album.images[1].url}
         alt={props.album.name}
         style={Album.styles.img}
+        onClick={() => props.getTracks(props.album.id)}
       />
     </li>
   );
@@ -14,6 +15,7 @@ const Album = (props) => {
 
 Album.propTypes = {
   album: React.PropTypes.object.isRequired,
+  getTracks: React.PropTypes.func.isRequired
 };
 
 Album.styles = {
