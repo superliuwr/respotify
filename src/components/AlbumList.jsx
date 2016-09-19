@@ -1,9 +1,8 @@
 import React from 'react';
+import Album from './Album';
 
 const AlbumList = (props) => {
-  const albums = props.albums.map((album) => {
-    return (<li><img src={album.images[1].url} alt={album.name} /></li>);
-  });
+  const albums = props.albums.map((album) => <Album key={album.id} album={album} />);
 
   return (
     <div className="col-md-4" style={AlbumList.styles.div}>
